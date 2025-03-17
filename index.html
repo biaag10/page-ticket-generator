@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- mini icone que fica no ao lado do titulo da pagina -->
+  <link rel="icon" type="image/png" syzes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap">
+
+
+  <title>Projeto Individual I - Página de geração de tickets</title>
+  <link rel="stylesheet" href="styles/styles-home.css">
+  <link rel="stylesheet" href="styles/styles-ticket.css">
+</head>
+
+<body>
+  <div class="imagem-container">
+    <div class="imagens-detalhes">
+      <img src="assets/images/pattern-lines.svg" alt="">
+    </div>
+    <div class="imagens-detalhes">
+      <img src="assets/images/pattern-squiggly-line-top.svg" alt="">
+    </div>
+    <div class="imagens-detalhes">
+      <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="">
+    </div>
+    <div class="imagens-detalhes">
+      <img src="assets/images/pattern-circle.svg" alt="">
+    </div>
+    <div class="imagens-detalhes">
+      <img src="assets/images/pattern-circle.svg" alt="">
+    </div>
+
+    <div class="conteudo-container">
+
+      <!-- OLHE AQUI  não tinha style="display: none;-->
+      <div id="form-conteudo" class="form-conteudo"">
+        <img class="logo-full" src="assets/images/logo-full.svg" alt="">
+
+        <div class="textos">
+          <h1>Your Jorney to Coding Conf 2025 Starts Here!</h1>
+          <p>Secure your spot at next year's biggest coding conference.</p>
+        </div>
+
+        <form id="ticket-form">
+          <div class="item">
+            <label for="input-arquivo">Upload Avatar</label>
+            <div id="area-upload" class="upload-arquivo">
+              <input type="file" id="input-arquivo" class="input-arquivo" accept="image/png, image/jpeg" />
+              <img id="upload-imagem" src="assets/images/icon-upload.svg" alt="">
+              <div id="menssagem" class="mensagem">Drag and drop or click to upload</div>
+              <div id="arquivo-acoes" class="arquivo-acoes">
+                <button type="button" id="btn-remover">Remove Image</button>
+                <button type="button" id="btn-mudar">Change Image</button>
+              </div>
+            </div>
+            <p id="upload-hint" class="upload-info">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round"
+                  d="M2 8a6 6 0 1 0 12 0 46 6 0 0 0 2 8Z" />
+                <path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+                <path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.004 10.462V7.596M8 5.569v-.042" />
+              </svg>
+              Upload your photo (JPG or PNG, max size: 500kb)
+            </p>
+          </div>
+
+
+          <div class="item">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" class="required">
+            <p class="text-hint">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
+                  d="M2 8a6 6 0 1 0 12 0 46 6 0 0 0 2 8Z" />
+                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.004 10.462V7.596M8 5.569v-.042" />
+              </svg>
+              Please enter your full name.
+            </p>
+          </div>
+          <div class="item">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" class="required">
+            <p class="text-hint">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
+                  d="M2 8a6 6 0 1 0 12 0 46 6 0 0 0 2 8Z" />
+                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.004 10.462V7.596M8 5.569v-.042" />
+              </svg>
+              Please enter a valid email address.
+            </p>
+          </div>
+          <div class="item">
+            <label for="github">Github Username</label>
+            <input type="text" id="github" class="required">
+            <p class="text-hint">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
+                  d="M2 8a6 6 0 1 0 12 0 46 6 0 0 0 2 8Z" />
+                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.004 10.462V7.596M8 5.569v-.042" />
+              </svg>
+              Please enter a valid username.
+            </p>
+          </div>
+          <button type="submit" id="btn-ticket" class="btn-ticket">Generate My Ticket</button>
+        </form>
+
+      </div>
+
+      <!-- OLHE AQUI sem style="display: none;" com style="display: block;"-->
+      <div id="display-data" class="display-data" style="display: none;">
+        <img class="logo" src="assets/images/logo-full.svg" alt="">
+        <div class="textos">
+          <h1>Congrats, <span id="header-name"></span>! Your ticket is ready.</h1>
+          <p>We've emailed your ticket to <span id="display-email" class="header-email"></span> and will send updates in
+            the run up to the event.</p>
+        </div>
+
+        <div class="ticket-container">
+          <div class="logo">
+            <img src="assets/images/logo-mark.svg" alt="">
+            Coding Conf
+          </div>
+          <p class="data">Jan 31, 2025 / Austin, TX</p>
+          <div class="ticket-user">
+            <img id="display-imagem" src="" alt="">
+            <div class="user-info">
+              <span id="display-name"></span>
+              <div class="github-username">
+                <img src="assets/images/icon-github.svg" alt="">
+                <span id="display-github"></span>
+
+              </div>
+
+            </div>
+          </div>
+          <p class="ticket-number">#01609</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
