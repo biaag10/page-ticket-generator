@@ -9,7 +9,7 @@
     z-index: 20;
 }
 
-.display-data .logo {
+.display-data .logo-full {
     margin: 0 auto 2rem auto;
 }
 
@@ -34,7 +34,7 @@
     border-radius: 0.5rem;
 }
 
-.display-data .ticket-container .logo {
+.display-data .ticket-container .logo-full {
     margin-bottom: 0.5rem;
     font-size: 2.75rem;
     font-weight: 700;
@@ -114,7 +114,7 @@
         padding: 0;
     }
 
-    .display-data .ticket-container .logo {
+    .display-data .ticket-container .logo-full {
         margin-bottom: 0;
         font-size: 1.5rem;
     }
@@ -137,12 +137,8 @@
 }
 
 @media (max-width: 400px) {
-    .display-data .ticket-container .logo {
-        font-size: 1.25rem;
-    }
-
-    .display-data .ticket-container .ticket-user #display-name {
-        font-size: 1rem;
+    .form-conteudo {
+        height: 620px;
     }
 }
 

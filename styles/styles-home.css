@@ -1,3 +1,6 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 * {
     padding: 0;
     margin: 0;
@@ -22,6 +25,7 @@
   
     --gradient-text-start: hsl(7, 86%, 67%);
     --gradient-text-end: hsl(0, 0%, 100%);
+    --gradient-text: linear-gradient(hsl(7, 86%, 67%), hsl(0, 0%, 100%));
 }
 
 img {
@@ -32,14 +36,14 @@ img {
 body {
     background-color: var(--neutral-900);
     color: #fff;
-    min-height: 110vh;
+    min-height: 100vh;
     font-family: 'Inconsolata', serif;
 }
 
 .imagem-container {
     background: url(assets/images/background-desktop.png) no-repeat center center/cover;
     width: 100%;
-    height: 110vh;
+    height: 55rem;
     position: relative;
     aspect-ratio: 16/9;
     overflow-y: hidden;
@@ -98,7 +102,9 @@ body {
     background: var(--gradient-text-start);
     background: linear-gradient(to right, var(--gradient-text-start) 10%, var(--gradient-text-end) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline;
 }
 
 .header-email {
@@ -216,11 +222,11 @@ body {
     object-fit: cover;
 }
 
-.item .upload-arquivo .menssagem.hide {
+.item .upload-arquivo .mensagem.hide {
     display: none;
 }
 
-.item .upload-arquivo .menssagem button {
+.item .upload-arquivo .mensagem button {
     cursor: pointer;
     background-color: hsla(246, 15%, 58%, 0.6);
     color: var(--neutral-300);
@@ -250,7 +256,8 @@ form .btn-ticket {
     background-color: var(--orange-500);
     padding: 1rem;
     width: 100%;
-    font-size: 1.25rem;
+    margin-top: 20px;
+    font-size: 1.15rem;
     font-weight: 700;
     border-radius: 0.75rem;
     border: 0;

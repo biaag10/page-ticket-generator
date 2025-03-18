@@ -40,7 +40,7 @@
 
       <!-- OLHE AQUI  não tinha style="display: none;-->
       <div id="form-conteudo" class="form-conteudo"">
-        <img class="logo-full" src="assets/images/logo-full.svg" alt="">
+        <img class="logo-full" src="assets/images/logo-full.svg" alt="Coding Conf Logo">
 
         <div class="textos">
           <h1>Your Jorney to Coding Conf 2025 Starts Here!</h1>
@@ -53,7 +53,7 @@
             <div id="area-upload" class="upload-arquivo">
               <input type="file" id="input-arquivo" class="input-arquivo" accept="image/png, image/jpeg" />
               <img id="upload-imagem" src="assets/images/icon-upload.svg" alt="">
-              <div id="menssagem" class="mensagem">Drag and drop or click to upload</div>
+              <div id="mensagem" class="mensagem">Drag and drop or click to upload</div>
               <div id="arquivo-acoes" class="arquivo-acoes">
                 <button type="button" id="btn-remover">Remove Image</button>
                 <button type="button" id="btn-mudar">Change Image</button>
@@ -61,10 +61,11 @@
             </div>
             <p id="upload-hint" class="upload-info">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                <path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round"
-                  d="M2 8a6 6 0 1 0 12 0 46 6 0 0 0 2 8Z" />
-                <path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
-                <path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round"
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
+                  d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z" />
+                  <!-- #D1D0D5 -->
+                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
                   d="M8.004 10.462V7.596M8 5.569v-.042" />
               </svg>
               Upload your photo (JPG or PNG, max size: 500kb)
@@ -77,39 +78,33 @@
             <input type="text" id="full-name" class="required">
             <p class="text-hint">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
-                  d="M2 8a6 6 0 1 0 12 0 46 6 0 0 0 2 8Z" />
-                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
-                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
-                  d="M8.004 10.462V7.596M8 5.569v-.042" />
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/>
+                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/>
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/>
               </svg>
-              Please enter your full name.
+              Please enter your full name
             </p>
           </div>
           <div class="item">
             <label for="email">Email Address</label>
-            <input type="text" id="email" class="required">
+            <input type="text" id="email" class="required" placeholder="example@email.com">
             <p class="text-hint">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
-                  d="M2 8a6 6 0 1 0 12 0 46 6 0 0 0 2 8Z" />
-                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
-                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
-                  d="M8.004 10.462V7.596M8 5.569v-.042" />
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/>
+                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/>
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/>
               </svg>
-              Please enter a valid email address.
+                Please enter a valid email address.
             </p>
           </div>
           <div class="item">
             <label for="github">Github Username</label>
-            <input type="text" id="github" class="required">
+            <input type="text" id="github" class="required" placeholder="@yourusername">
             <p class="text-hint">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
-                  d="M2 8a6 6 0 1 0 12 0 46 6 0 0 0 2 8Z" />
-                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
-                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
-                  d="M8.004 10.462V7.596M8 5.569v-.042" />
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/>
+                <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/>
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/>
               </svg>
               Please enter a valid username.
             </p>
@@ -121,25 +116,25 @@
 
       <!-- OLHE AQUI sem style="display: none;" com style="display: block;"-->
       <div id="display-data" class="display-data" style="display: none;">
-        <img class="logo" src="assets/images/logo-full.svg" alt="">
+        <img class="logo-full" src="assets/images/logo-full.svg" alt="Coding Conf Logo">
         <div class="textos">
-          <h1>Congrats, <span id="header-name"></span>! Your ticket is ready.</h1>
+          <h1>Congrats, <span id="header-name" class="gradient-texto"></span>! Your ticket is ready.</h1>
           <p>We've emailed your ticket to <span id="display-email" class="header-email"></span> and will send updates in
             the run up to the event.</p>
         </div>
 
         <div class="ticket-container">
-          <div class="logo">
-            <img src="assets/images/logo-mark.svg" alt="">
+          <div class="logo-full">
+            <img src="assets/images/logo-mark.svg" alt="logo-mark">
             Coding Conf
           </div>
           <p class="data">Jan 31, 2025 / Austin, TX</p>
           <div class="ticket-user">
-            <img id="display-imagem" src="" alt="">
+            <img id="display-imagem" src="" alt="User avatar">
             <div class="user-info">
               <span id="display-name"></span>
               <div class="github-username">
-                <img src="assets/images/icon-github.svg" alt="">
+                <img src="assets/images/icon-github.svg" alt="icon-github">
                 <span id="display-github"></span>
 
               </div>
@@ -153,6 +148,13 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>  <!-- EmailJS SDK -->
+    <script>
+      (function(){
+        emailjs.init("C7xBNz9wj9aSeBITC"); // Initialize EmailJS with your public key
+      })();
+    </script>  
+  <script src="./main.js"></script>
 </body>
 
 </html>
