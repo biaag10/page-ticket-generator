@@ -90,7 +90,7 @@ function resetUpload() {
     const defaultUploadIcon = `images/icon-upload.svg`;
     inputArquivo.value = '';
     uploadImagem.src = defaultUploadIcon;
-    menssaem.classList.add('hide');
+    mensagem.classList.add('hide');
     arquivoAcoes.classList.remove('show');
     uploadHint.classList.remove('error');
     uploadHint.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
@@ -115,6 +115,7 @@ function armazenarEdisplayFormData() {
     
 }
 
+
 form.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -135,9 +136,10 @@ form.addEventListener('submit', e => {
             user_name: formData.nome,
             user_email: formData.email,
             user_github: formData.github,
+            id_ingresso: "#01609",
         };
 
-        emailjs.send("conference_ticket", "template_co03xwm", templateParametros)
+        emailjs.send("service_4e26szr", "template_hfirvit", templateParametros)
             .then(response => {
                 console.log('Ticket sent successfully', response);
             })
