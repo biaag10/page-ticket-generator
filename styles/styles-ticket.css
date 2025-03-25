@@ -84,14 +84,15 @@
     transform: rotate(90deg);
 }
 
+/* Responsividade para telas pequenas */
 @media (max-width: 540px) {
     .imagens-detalhes:nth-child(2) {
         top: 50px;
     }
 
     .imagens-detalhes:nth-child(4) {
-       top: -80px;
-       left: -30px;
+        top: -80px;
+        left: -30px;
     }
 
     .textos h1 {
@@ -130,15 +131,15 @@
     .display-data .ticket-container .ticket-user #display-name {
         font-size: 1.25rem;
     }
-    
+
     .display-data .ticket-container .ticket-number {
         right: -8px;
     }
 }
 
+/* Responsividade para telas menores (400px ou menos) */
 @media (max-width: 400px) {
     .form-conteudo {
         height: 620px;
     }
 }
-

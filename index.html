@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- mini icone que fica no ao lado do titulo da pagina -->
-  <link rel="icon" type="image/png" syzes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <!-- fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap">
-
 
   <title>Projeto Individual I - Página de geração de tickets</title>
   <link rel="stylesheet" href="styles/styles-home.css">
@@ -38,8 +37,8 @@
 
     <div class="conteudo-container">
 
-      <!-- OLHE AQUI  não tinha style="display: none;-->
-      <div id="form-conteudo" class="form-conteudo"">
+      <!-- OLHE AQUI  não tinha style="display: none;"-->
+      <div id="form-conteudo" class="form-conteudo">
         <img class="logo-full" src="assets/images/logo-full.svg" alt="Coding Conf Logo">
 
         <div class="textos">
@@ -59,19 +58,17 @@
                 <button type="button" id="btn-mudar">Mudar Imagem</button>
               </div>
             </div>
+            
             <p id="upload-hint" class="upload-info">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
-                  d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z" />
-                  <!-- #D1D0D5 -->
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z" />
+                <!-- #D1D0D5 -->
                 <path fill="#f57261" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
-                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round"
-                  d="M8.004 10.462V7.596M8 5.569v-.042" />
+                <path stroke="#f57261" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042" />
               </svg>
-              Faça o Upload da sua foto (JPG or PNG, tamanho máximo: 500kb)
+              Faça o Upload da sua foto (JPG ou PNG, tamanho máximo: 500kb)
             </p>
           </div>
-
 
           <div class="item">
             <label for="full-name">Nome Completo</label>
@@ -111,7 +108,6 @@
           </div>
           <button type="submit" id="btn-ticket" class="btn-ticket">Gerar meu Ticket</button>
         </form>
-
       </div>
 
       <!-- OLHE AQUI sem style="display: none;" com style="display: block;"-->
@@ -119,7 +115,7 @@
         <img class="logo-full" src="assets/images/logo-full.svg" alt="Coding Conf Logo">
         <div class="textos">
           <h1>Parabéns, <span id="header-name" class="gradient-texto"></span>! Seu ticket está pronto.</h1>
-          <p>Nós enviamos um e-mail para <span id="display-email" class="header-email"></span> e iremos enviar atualizações sibre o andamento do evento.</p>
+          <p>Nós enviamos um e-mail para <span id="display-email" class="header-email"></span> e iremos enviar atualizações sobre o andamento do evento.</p>
         </div>
 
         <div class="ticket-container">
@@ -135,25 +131,23 @@
               <div class="github-username">
                 <img src="assets/images/icon-github.svg" alt="icon-github">
                 <span id="display-github"></span>
-
               </div>
-
             </div>
           </div>
           <p class="ticket-number">#01609</p>
         </div>
-
-
       </div>
     </div>
   </div>
+
+  <!-- https://dashboard.emailjs.com/admin -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>  <!-- EmailJS SDK -->
-    <script>
-      (function(){
-        emailjs.init("qxZjtfQEAumNbOEFp"); 
-      })();
-    </script>  
-  <script src="./main.js"></script>
+  <script>
+    (function(){
+      emailjs.init("qxZjtfQEAumNbOEFp"); 
+    })();
+  </script>  
+  <script src="./script.js"></script>
 </body>
 
 </html>

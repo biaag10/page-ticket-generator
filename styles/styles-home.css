@@ -214,12 +214,21 @@ body {
     border-radius: 0.5rem;
     display: grid;
     place-content: center;
+    max-height: 300px; 
+    overflow: auto; /* adiciona rolagem se a imagem for muito grande */
 }
 
 .form .upload-arquivo .upload-imagem img {
     width: 50%;
     height: 50%;
-    object-fit: cover;
+    /* object-fit: cover; */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
+    object-fit: contain; /* Ajusta a imagem para caber no contêiner, mantendo a proporção */
+}
+
+.upload-arquivo img{
+    width: 32px;
 }
 
 .item .upload-arquivo .mensagem.hide {
